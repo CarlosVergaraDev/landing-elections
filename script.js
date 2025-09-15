@@ -1,3 +1,4 @@
+// Carrusell 
 const cardsData = [
     { url: "https://picsum.photos/id/1015/600/400", titulo: "Montañas", descripcion: "Un paisaje sereno en la cima de las montañas nevadas." },
     { url: "https://picsum.photos/id/1025/600/400", titulo: "Águila", descripcion: "La fuerza y libertad representada en un majestuoso vuelo." },
@@ -39,6 +40,9 @@ function renderCarrusel(data) {
 }
 
 renderCarrusel(cardsData);
+
+
+
 
 
 // Logros y avances 
@@ -120,7 +124,7 @@ document.querySelectorAll(".video-thumb").forEach(img => {
   });
 });
 
-// Cerrar modal
+// Cerrar modal 
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
   videoContainer.innerHTML = ""; // Limpiar iframe para detener video
@@ -132,4 +136,37 @@ modal.addEventListener("click", (e) => {
     modal.style.display = "none";
     videoContainer.innerHTML = ""; // Detener video
   }
+});
+
+
+// Boton Menu Hamburguesa Nav
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("main-nav-lateral");
+const closeMenu = document.getElementById("closeMenu");
+const navOverlay = document.getElementById("navOverlay");
+
+// Abrir menú
+menuToggle.addEventListener("click", () => {
+  mainNav.classList.add("active");
+  navOverlay.classList.add("active");
+});
+
+// Cerrar menú con botón X
+closeMenu.addEventListener("click", () => {
+  mainNav.classList.remove("active");
+  navOverlay.classList.remove("active");
+});
+
+// Cerrar menú al hacer click en overlay
+navOverlay.addEventListener("click", () => {
+  mainNav.classList.remove("active");
+  navOverlay.classList.remove("active");
+});
+
+// Cerrar al hacer click en un link del menú
+document.querySelectorAll(".main-nav-lateral a").forEach(link => {
+  link.addEventListener("click", () => {
+    mainNav.classList.remove("active");
+    navOverlay.classList.remove("active");
+  });
 });
