@@ -213,9 +213,6 @@ header {
   background-color: #bd4d08;
 }
 
-
-
-
 .container-socials{
   width: 100%;
   height: max-content;
@@ -657,20 +654,6 @@ header {
   font-size: var(--step--1);
 }
 
-.profile-photo {
-  display: flex;
-  width: auto;
-  height: auto;
-  justify-content: center;
-}
-
-.profile-photo >img{
-  padding: 2rem;
-  width: 85%;
-  height: auto;
-  object-fit: contain;
-}
-
 
 
 
@@ -1025,7 +1008,7 @@ header {
 
   /* Plan de Gobierno */
   .plan-container{
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     height: max-content;
@@ -1048,17 +1031,6 @@ header {
   font-family: "Lexend";
 
 
-  .plan-photo{
-    width: 100%;
-    height: auto;
-    justify-content: center;
-  }
-
-  .profile-photo >img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 
 }
 
