@@ -45,7 +45,12 @@ renderCarrusel(cardsData);
 
 
 
+
+
 // Logros y avances 
+
+
+//Seccion Web
 const slides = [
   { url: "https://i.ibb.co/chgmXRdT/lv10.png", year: "2020", title: "Montañas al amanecer" },
   { url: "https://picsum.photos/id/1025/1200/800", year: "2021", title: "Naturaleza salvaje" },
@@ -69,7 +74,7 @@ slides.forEach((slide, index) => {
 const images = slideshow.querySelectorAll("img");
 
 // Función para cambiar de imagen
-function changeSlide() {
+function changeSlideWeb() {
   images[currentIndex].classList.remove("active");
 
   currentIndex = (currentIndex + 1) % slides.length;
@@ -85,7 +90,54 @@ overlayYear.textContent = slides[0].year;
 overlayTitle.textContent = slides[0].title;
 
 // Cada 6 segundos cambiar
-setInterval(changeSlide, 8000);
+setInterval(changeSlideWeb, 6000);
+
+
+
+
+//Seccion Responsive
+const slidesR = [
+  { url: "https://i.ibb.co/chgmXRdT/lv10.png", year: "2020", title: "Montañas al amanecer" },
+  { url: "https://picsum.photos/id/1025/1200/800", year: "2021", title: "Naturaleza salvaje" },
+  { url: "https://picsum.photos/id/1035/1200/800", year: "2022", title: "Paisaje urbano" }
+];
+
+const slideshowR = document.getElementById("slideshow-2");
+const overlayYearR = slideshowR.querySelector(".year");
+const overlayTitleR = slideshowR.querySelector(".title");
+
+let currentIndexR = 0;
+
+// Crear imágenes en el DOM
+slidesR.forEach((slide, index) => {
+  const img = document.createElement("img");
+  img.src = slide.url;
+  if (index === 0) img.classList.add("active");
+  slideshowR.appendChild(img);
+});
+
+const imagesR = slideshowR.querySelectorAll("img");
+
+// Función para cambiar de imagen
+function changeSlideResponsive() {
+  imagesR[currentIndexR].classList.remove("active");
+
+  currentIndexR = (currentIndexR + 1) % slidesR.length;
+
+  imagesR[currentIndexR].classList.add("active");
+
+  overlayYearR.textContent = slidesR[currentIndexR].year;
+  overlayTitleR.textContent = slidesR[currentIndexR].title;
+}
+
+// Inicializar con la primera
+overlayYearR.textContent = slidesR[0].year;
+overlayTitleR.textContent = slidesR[0].title;
+
+// Cada 6 segundos cambiar
+setInterval(changeSlideResponsive, 6000);
+
+
 
 
 // Acordion logros y avances
@@ -103,6 +155,9 @@ accordions.forEach(item => {
 });
 
 
+
+
+
 // Modal Videos FB
 const modal = document.getElementById("videoModal");
 const videoContainer = document.getElementById("videoContainer");
@@ -115,11 +170,10 @@ document.querySelectorAll(".video-thumb").forEach(img => {
     // Cargar iframe de Facebook dentro del modal
     videoContainer.innerHTML = `
       <iframe src="https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(videoUrl)}&autoplay=1"
-              width="100%" height="450" 
-              style="border:none;overflow:hidden" 
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              allowFullScreen></iframe>
-    `;
+      width="100%" height="450" 
+      style="border:none;overflow:hidden" 
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      allowFullScreen></iframe>`;
     modal.style.display = "flex";
   });
 });
@@ -137,6 +191,47 @@ modal.addEventListener("click", (e) => {
     videoContainer.innerHTML = ""; // Detener video
   }
 });
+
+
+// Modal Videos FB Responsive
+
+const modalR = document.getElementById("videoModalR");
+const videoContainerR = document.getElementById("videoContainerR");
+const closeBtnR = document.querySelector(".closeR");
+
+// Abrir modal al hacer click en la imagen
+document.querySelectorAll(".video-thumb").forEach(img => {
+  img.addEventListener("click", () => {
+    const videoUrl = img.getAttribute("data-video");
+    // Cargar iframe de Facebook dentro del modal
+    videoContainerR.innerHTML = `
+      <iframe src="https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(videoUrl)}&autoplay=1"
+      width="100%" height="450" 
+      style="border:none;overflow:hidden" 
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      allowFullScreen></iframe>`;
+    modalR.style.display = "flex";
+  });
+});
+
+// Cerrar modal 
+closeBtnR.addEventListener("click", () => {
+  modalR.style.display = "none";
+  videoContainerR.innerHTML = ""; // Limpiar iframe para detener video
+});
+
+// Cerrar modal si se hace click fuera del contenido
+modalR.addEventListener("click", (e) => {
+  if (e.target === modalR) {
+    modalR.style.display = "none";
+    videoContainerR.innerHTML = ""; // Detener video
+  }
+});
+
+
+
+
+
 
 
 // Boton Menu Hamburguesa Nav
