@@ -1,10 +1,10 @@
 // Carrusell 
 const cardsData = [
-    { url: "https://picsum.photos/id/1015/600/400", titulo: "Montañas", descripcion: "Un paisaje sereno en la cima de las montañas nevadas." },
+    { url: "https://i.ibb.co/MyXV5d8w/image.png", titulo: "Montañas", descripcion: "Un paisaje sereno en la cima de las montañas nevadas." },
     { url: "https://picsum.photos/id/1025/600/400", titulo: "Águila", descripcion: "La fuerza y libertad representada en un majestuoso vuelo." },
-    { url: "https://picsum.photos/id/1035/600/400", titulo: "Bosque", descripcion: "La tranquilidad de los árboles y el aire fresco." },
+    { url: "https://i.ibb.co/TD1TtBWf/image.png", titulo: "Bosque", descripcion: "La tranquilidad de los árboles y el aire fresco." },
     { url: "https://picsum.photos/id/1045/600/400", titulo: "Río", descripcion: "Un cauce cristalino que refleja la pureza de la naturaleza." },
-    { url: "https://picsum.photos/id/1055/600/400", titulo: "Carretera", descripcion: "Un viaje sin fin hacia lo desconocido." },
+    { url: "https://i.ibb.co/MyXV5d8w/image.png", titulo: "Carretera", descripcion: "Un viaje sin fin hacia lo desconocido." },
     { url: "https://picsum.photos/id/1065/600/400", titulo: "Ciudad", descripcion: "La vida urbana llena de luces y energía." },
     { url: "https://picsum.photos/id/1075/600/400", titulo: "Mar", descripcion: "La inmensidad azul que nos invita a soñar." },
     { url: "https://picsum.photos/id/1085/600/400", titulo: "Desierto", descripcion: "La calma y la dureza de las arenas eternas." },
@@ -263,5 +263,16 @@ document.querySelectorAll(".main-nav-lateral a").forEach(link => {
   link.addEventListener("click", () => {
     mainNav.classList.remove("active");
     navOverlay.classList.remove("active");
+  });
+});
+
+
+
+// Acordion Ejes de gobierno (6)
+const blocks = document.querySelectorAll(".block-list");
+
+blocks.forEach(block => {
+  block.addEventListener("click", () => {
+    block.classList.toggle("active");
   });
 });
