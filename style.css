@@ -1343,6 +1343,35 @@ div[class^="show"]>p{
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
 
+  @keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-800%); }
+  }
+
+
+.whatsapp-float {
+  width:7rem;
+  height: 7rem;
+  position: fixed;
+  bottom: 20px;       /* separación inferior */
+  right: 20px;        /* separación lateral */
+  text-decoration: none;
+  z-index: 999;       /* siempre visible */
+}
+
+.whatsapp-float>img{
+  width: 100%;
+  height: auto;
+  object-position: cover;
+}
+
+.whatsapp-float:hover {
+  opacity: 0.9;
+}
+
+
+
+
   
 
 

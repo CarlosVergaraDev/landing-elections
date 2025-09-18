@@ -106,7 +106,7 @@ overlayYear.textContent = slides[0].year;
 overlayTitle.textContent = slides[0].title;
 
 // Cada 6 segundos cambiar
-setInterval(changeSlideWeb, 6000);
+setInterval(changeSlideWeb, 5000);
 
 
 
@@ -154,7 +154,7 @@ overlayYearR.textContent = slidesR[0].year;
 overlayTitleR.textContent = slidesR[0].title;
 
 // Cada 6 segundos cambiar
-setInterval(changeSlideResponsive, 6000);
+setInterval(changeSlideResponsive, 5000);
 
 
 
