@@ -1,20 +1,34 @@
 // Carrusell 
 const cardsData = [
-    { url: "https://i.ibb.co/MyXV5d8w/image.png", titulo: "Montañas", descripcion: "Un paisaje sereno en la cima de las montañas nevadas." },
-    { url: "https://picsum.photos/id/1025/600/400", titulo: "Águila", descripcion: "La fuerza y libertad representada en un majestuoso vuelo." },
-    { url: "https://i.ibb.co/TD1TtBWf/image.png", titulo: "Bosque", descripcion: "La tranquilidad de los árboles y el aire fresco." },
-    { url: "https://picsum.photos/id/1045/600/400", titulo: "Río", descripcion: "Un cauce cristalino que refleja la pureza de la naturaleza." },
-    { url: "https://i.ibb.co/MyXV5d8w/image.png", titulo: "Carretera", descripcion: "Un viaje sin fin hacia lo desconocido." },
-    { url: "https://picsum.photos/id/1065/600/400", titulo: "Ciudad", descripcion: "La vida urbana llena de luces y energía." },
-    { url: "https://picsum.photos/id/1075/600/400", titulo: "Mar", descripcion: "La inmensidad azul que nos invita a soñar." },
-    { url: "https://picsum.photos/id/1085/600/400", titulo: "Desierto", descripcion: "La calma y la dureza de las arenas eternas." },
-    { url: "https://picsum.photos/id/1095/600/400", titulo: "Campo", descripcion: "La sencillez y frescura de la vida rural." },
-    { url: "https://picsum.photos/id/1105/600/400", titulo: "Aurora", descripcion: "Luces danzantes que iluminan el cielo nocturno." },
-    { url: "https://picsum.photos/id/1115/600/400", titulo: "Isla", descripcion: "Un refugio perdido entre aguas turquesa." },
-    { url: "https://picsum.photos/id/1125/600/400", titulo: "Cascada", descripcion: "El rugido del agua que cae con fuerza imponente." },
-    { url: "https://picsum.photos/id/1135/600/400", titulo: "Lago", descripcion: "Espejo natural donde se refleja la vida." },
-    { url: "https://picsum.photos/id/1145/600/400", titulo: "Noche", descripcion: "Un cielo estrellado que invita a contemplar." },
-    { url: "https://picsum.photos/id/1155/600/400", titulo: "Camino", descripcion: "La ruta hacia nuevas oportunidades." },
+    { url: "https://i.ibb.co/PZwdmxTJ/image.png", titulo: "Programa de movilidad académica ", descripcion: "Despedimos a 21 estudiantes beneficiarios del Programa de Inmersión en Lenguas Extranjeras, quienes viajan a Canadá para fortalecer su formación. Por tercer año consecutivo, la Universidad del Atlántico impulsa la movilidad académica y la proyección internacional, consolidando avances con La Excelencia Continua." },
+
+
+    { url: "https://i.ibb.co/xq54jgtB/image.png", titulo: "Firma de convenio en conjunto de rectores Madrid - España ", descripcion: "En la misión académica en Madrid, la Universidad del Atlántico suscribió una declaración conjunta con rectores y directivos internacionales para fortalecer la educación superior, la investigación y la digitalización. Un paso firme hacia la internacionalización de nuestros estudiantes y docentes, consolidando La Excelencia Continua." },
+    
+    { url: "https://i.ibb.co/tp2QqR2G/image.png", titulo: "Tres años de gestión la excelencia continua", descripcion: "Desde la rectoría, hemos avanzado en internacionalización, regionalización y modernización de la infraestructura educativa. Tres años de gestión que marcan un antes y un después para la Universidad del Atlántico." },
+
+    
+    { url: "https://i.ibb.co/j9GN1yDf/image.pngg", titulo: "Fortalecimiento de las sedes regionales ", descripcion: "El fortalecimiento de las sedes de Sabanalarga y Suan refleja el compromiso con la descentralización y el acceso a una educación superior de calidad. Con estas mejoras en infraestructura, la Universidad del Atlántico amplía su alcance y reafirma su liderazgo regional con La Excelencia Continua." },
+
+    { url: "https://i.ibb.co/nqLpFX6x/image.png", titulo: "Lanzamiento de voluntariado Uniatlantico", descripcion: "Con el lanzamiento del Voluntariado Uniatlántico, la Universidad fortalece su compromiso solidario en alianza con instituciones locales y regionales. Un espacio que integra lo académico, social, artístico, cultural y ambiental, formando líderes que transforman la región." },
+
+    { url: "https://i.ibb.co/qYNsPy8w/image.png", titulo: "Observatorio Mesoamericano de Educación Ambiental", descripcion: "Entrega de un espacio físico que lleva por nombre 'Laboratorio de ideas - Investigación', dotado de equipos de última generación, enlazados con la Red Mesoamericana de Educación Ambiental." },
+
+    { url: "https://i.ibb.co/PGfSDsLC/image.png", titulo: "Nuevo sistema de alumbrado en la universidad del atlántico", descripcion: "La instalación del nuevo sistema de alumbrado en la Universidad del Atlántico transforma la seguridad del campus y responde a las necesidades de estudiantes y docentes. Un avance enmarcado en la estrategia #UATerritorioSeguro." },
+
+    { url: "https://i.ibb.co/kV4Vd32N/image.png", titulo: "Entrega de pista atlética y cancha de futbol", descripcion: "Con la entrega de la cancha de fútbol y la pista atlética, la Universidad del Atlántico fortalece la formación integral de sus estudiantes y proyecta el deporte como motor de desarrollo en la región Caribe." },
+
+    { url: "https://i.ibb.co/RGwwW8Wm/image.png", titulo: "Entrega de casa villa arte", descripcion: "Con la inauguración de la renovada Cafetería Central de la Sede Norte, la Universidad del Atlántico entrega un espacio inclusivo, accesible y con capacidad para más de 1.200 personas." },
+    
+    { url: "https://i.ibb.co/fdcW0N7h/image.png", titulo: "Aulas híbridas en la sede Norte de la UA", descripcion: "Con 16 aulas híbridas en la Sede Norte, la Universidad del Atlántico moderniza sus espacios académicos, integrando modalidades presenciales y remotas. Un avance que fortalece la calidad educativa." },
+
+    { url: "https://i.ibb.co/nNCzzZTq/image.png", titulo: "Entrega de la cafetería central UA", descripcion: "La reapertura de la Cafetería Central ofrece nuevos servicios y fortalece el Programa de Almuerzos Subsidiados para los estudiantes. Un espacio moderno que promueve la integración y el bienestar de toda la comunidad universitaria." },
+
+    { url: "https://i.ibb.co/B5PvGH9H/image.png", titulo: "Donación de lote construcción sede soledad ", descripcion: "Con el apoyo de la Alcaldía de Soledad y la Gobernación del Atlántico, se concreta la intención de donación de una sede para nuestra institución. Un espacio con aulas, laboratorios y servicios que fortalece la regionalización." },
+
+    { url: "https://i.ibb.co/mkMxQNV/image.png", titulo: "Repotenciación de la planta de tratamiento de aguas residuales ", descripcion: "La repotenciación de la planta de tratamiento de aguas residuales demuestra el compromiso de la Universidad del Atlántico con la sostenibilidad. Una inversión en infraestructura y tecnología que garantiza buenas prácticas ambientales." },
+
+    { url: "https://i.ibb.co/0jRxzYHX/image.png", titulo: "Apertura al sistema de medios UA", descripcion: "Con el lanzamiento del Sistema de Medios, la Universidad del Atlántico fortalece sus canales de comunicación y participación. Un logro que amplía la voz de la comunidad universitaria y consolida la innovación institucional, enmarcada en La Excelencia Continua." }
 ];
 
 function renderCarrusel(data) {
@@ -52,9 +66,11 @@ renderCarrusel(cardsData);
 
 //Seccion Web
 const slides = [
-  { url: "https://i.ibb.co/chgmXRdT/lv10.png", year: "2020", title: "Montañas al amanecer" },
-  { url: "https://picsum.photos/id/1025/1200/800", year: "2021", title: "Naturaleza salvaje" },
-  { url: "https://picsum.photos/id/1035/1200/800", year: "2022", title: "Paisaje urbano" }
+  { url: "https://i.ibb.co/gb0T9rhP/lv07.png", year: "2025", title: "Restauración de sede Bellas Artes" },
+  { url: "https://i.ibb.co/PZwdmxTJ/image.png", year: "2024", title: "Ampliación de oferta academica en sede Suan" },
+  { url: "https://i.ibb.co/TD1TtBWf/image.png", year: "2023", title: "Gratuidad universal para Matriculas de estratos 1,2 y 3" },
+  { url: "https://i.ibb.co/chgmXRdT/lv10.png", year: "2022", title: "Se aumento a 23 el numero de programas acreditados en alta calida" },
+  { url: "https://i.ibb.co/j9GN1yDf/image.png", year: "2021", title: "Apertura oficial de la sede Sabanalarga" }
 ];
 
 const slideshow = document.getElementById("slideshow");
@@ -97,10 +113,13 @@ setInterval(changeSlideWeb, 6000);
 
 //Seccion Responsive
 const slidesR = [
-  { url: "https://i.ibb.co/chgmXRdT/lv10.png", year: "2020", title: "Montañas al amanecer" },
-  { url: "https://picsum.photos/id/1025/1200/800", year: "2021", title: "Naturaleza salvaje" },
-  { url: "https://picsum.photos/id/1035/1200/800", year: "2022", title: "Paisaje urbano" }
+  { url: "https://i.ibb.co/gb0T9rhP/lv07.png", year: "2025", title: "Restauración de sede Bellas Artes" },
+  { url: "https://i.ibb.co/PZwdmxTJ/image.png", year: "2024", title: "Ampliación de oferta academica en sede Suan" },
+  { url: "https://i.ibb.co/TD1TtBWf/image.png", year: "2023", title: "Gratuidad universal para Matriculas de estratos 1,2 y 3" },
+  { url: "https://i.ibb.co/chgmXRdT/lv10.png", year: "2022", title: "Se aumento a 23 el numero de programas acreditados en alta calida" },
+  { url: "https://i.ibb.co/j9GN1yDf/image.png", year: "2021", title: "Apertura oficial de la sede Sabanalarga" }
 ];
+
 
 const slideshowR = document.getElementById("slideshow-2");
 const overlayYearR = slideshowR.querySelector(".year");
@@ -227,10 +246,6 @@ modalR.addEventListener("click", (e) => {
     videoContainerR.innerHTML = ""; // Detener video
   }
 });
-
-
-
-
 
 
 

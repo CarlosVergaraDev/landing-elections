@@ -19,6 +19,23 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download"/>
 
+  <!-- Favicon básico -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- PNG de varios tamaños -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <!-- Para iOS (pantalla de inicio en iPhone/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Para Android/Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body>
@@ -87,7 +104,7 @@
       <div class="hero-content">
 
         <div class="slogan-row">
-          <span class="slogan">La Excelencia continua</span>
+          <span class="slogan">La Excelencia Continua</span>
           <img class="logo-exc" src="https://i.ibb.co/6c1VTMwq/image.png" alt="Logo Excelencia">
         </div>
 
@@ -145,12 +162,10 @@
 
   </section>
 
-
   <!-- Carrusell -->
   <div class="carrusell-wrapper">
     <div class="carrusell-images"></div>
   </div>
-
 
   <!-- Profile -->
   <section id="perfil" class="profile-container">
@@ -159,7 +174,7 @@
 
       <!-- Left: text block -->
       <div class="slogan-row">
-        <span class="slogan">La Excelencia continua</span>
+        <span class="slogan">La Excelencia Continua</span>
         <img class="logo-exc" src="https://i.ibb.co/6c1VTMwq/image.png" alt="Logo Excelencia">
       </div>
 
@@ -184,6 +199,8 @@
   </section>
 
 
+
+
   <!-- Logros y avances-->
   <section id="logros" class="succes">
 
@@ -198,21 +215,27 @@
           </div>
         </div>
 
-        <div class="video-grid">
+    <div class="video-grid-1">
 
-          <!-- Imagen que abre el primer video -->
+        <!-- Imagen que abre el primer video -->
+        <div class="cont-img-thumb">
           <img src="https://i.ibb.co/Dg99DJMR/image.png" 
-          alt="Video 1"
-          class="video-thumb"
-          data-video="https://www.facebook.com/watch/?v=1268405894171410">
-
-          <!-- Imagen que abre el segundo video -->
-          <img src="https://i.ibb.co/1t1LRTbP/image.png" 
-          alt="Video 2"
-          class="video-thumb"
-          data-video="https://www.facebook.com/watch/?v=1719351315383830">
-            
+              alt="Video 1"
+              class="video-thumb"
+              data-video="https://www.facebook.com/watch/?v=1268405894171410">
+          <i class="fa-solid fa-circle-play"></i>
         </div>
+
+        <!-- Imagen que abre el segundo video -->
+        <div class="cont-img-thumb">
+          <img src="https://i.ibb.co/1t1LRTbP/image.png" 
+              alt="Video 2"
+              class="video-thumb"
+              data-video="https://www.facebook.com/watch/?v=1719351315383830">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+
+      </div>
 
       </div>
 
@@ -228,81 +251,81 @@
       <div class="succes-content">
 
         <div class="slogan-row">
-          <span class="slogan">La Excelencia continua</span>
+          <span class="slogan">La Excelencia Continua</span>
           <img class="logo-exc" src="https://i.ibb.co/6c1VTMwq/image.png" alt="Logo Excelencia">
         </div>
 
         <h1 class="title">Logros y Avances</h1>
 
-        <p>Hemos recorrido un camino de grandes transformaciones, consolidando avances significativos que fortalecen la calidad, el bienestar y la proyección de nuestra Universidad.</p>
+        <p id="text-succes">Hemos recorrido un camino de grandes transformaciones, consolidando avances significativos que fortalecen la calidad, el bienestar y la proyección de nuestra Universidad.</p>
 
         <div class="accordion">
 
           <div class="accordion-item">
-            <button class="accordion-header">Implementación del Plan de Desarrollo Institucional 2022-2031 <p>🔽</p></button>
+            <button class="accordion-header">Implementación del Plan de Desarrollo Institucional 2022-2031 <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se aprobó el nuevo PDI “Juntos Construimos Universidad”, con una nueva misión y visión, cinco líneas estratégicas y cuatro ejes programáticos, orientando el rumbo institucional hacia inclusión, investigación, innovación y modernización.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Retorno seguro a la presencialidad <p>🔽</p></button>
+            <button class="accordion-header">Retorno seguro a la presencialidad  <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se garantizaron protocolos de bioseguridad y adecuaciones en aulas y laboratorios para un regreso progresivo y seguro de la comunidad universitaria.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Fortalecimiento de Bienestar Universitario <p>🔽</p></button>
+            <button class="accordion-header">Fortalecimiento de Bienestar Universitario  <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se ofrecieron 1.027 atenciones psicológicas individuales, 8.633 apoyos económicos a estudiantes y convenios en movilidad y salud para mejorar la calidad de vida de la comunidad.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Dignificación laboral docente y administrativa <p>🔽</p></button>
+            <button class="accordion-header">Dignificación laboral docente y administrativa <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se realizaron mejoras salariales y de vinculación a 26 docentes, 23 pasaron a tiempo completo, 61 trabajadores fueron incluidos en planta y 7 funcionarios recuperaron derechos de carrera administrativa</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Fortalecimiento de la Unidad de Salud Universitaria <p>🔽</p></button>
+            <button class="accordion-header">Fortalecimiento de la Unidad de Salud Universitaria  <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se implementó una estrategia de equilibrio presupuestal y financiero, alcanzando 62% de ejecución en ingresos y 57% de recaudo, garantizando la sostenibilidad del servicio.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Actualización de estatutos y normatividad institucional <p>🔽</p></button>
+            <button class="accordion-header">Actualización de estatutos y normatividad institucional <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se avanzó en la actualización del Estatuto Estudiantil y otros reglamentos, con participación de la comunidad académica, fortaleciendo la gobernabilidad y la cultura de la excelencia.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Restauración de la Facultad de Bellas Artes<p>🔽</p></button>
+            <button class="accordion-header">Restauración de la Facultad de Bellas Artes <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Las obras de restauración alcanzaron un 82,6% de avance en 2024, con bloques icónicos como el Aula Magna y el Museo patrimonial superando el 90%, consolidándose como uno de los proyectos más emblemáticos de la institución.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Expansión en investigación, publicaciones y patentes<p>🔽</p></button>
+            <button class="accordion-header">Expansión en investigación, publicaciones y patentes <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se aprobaron 13 libros institucionales en 2024 y se obtuvieron nuevas patentes de invención en colaboración con docentes, fortaleciendo la innovación y la producción académica.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Premio a la Excelencia Maestro<p>🔽</p></button>
+            <button class="accordion-header">Premio a la Excelencia Maestro <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>En 2023 se realizó la primera gala de reconocimiento a 65 docentes con más de 40 años de servicio, resaltando su aporte a la formación y consolidación de la excelencia académica.</p>
             </div>
           </div>
 
           <div class="accordion-item">
-            <button class="accordion-header">Modernización del multicampus<p>🔽</p></button>
+            <button class="accordion-header">Modernización del multicampus <i class="fa-solid fa-chevron-down"></i></button>
             <div class="accordion-content">
               <p>Se ejecutaron intervenciones masivas en todas las sedes (Norte, Centro, Sabanalarga, Suan, Soledad, entre otras), incluyendo seguridad, mobiliario, laboratorios y sistemas tecnológicos.</p>
             </div>
@@ -312,26 +335,11 @@
 
       </div>
 
-      <div class="video-grid-2">
 
-        <!-- Imagen que abre el primer video -->
-        <img src="https://i.ibb.co/Dg99DJMR/image.png" 
-        alt="Video 1"
-        class="video-thumb"
-        data-video="https://www.facebook.com/watch/?v=1268405894171410">
 
-        <!-- Imagen que abre el segundo video -->
-        <img src="https://i.ibb.co/1t1LRTbP/image.png" 
-        alt="Video 2"
-        class="video-thumb"
-        data-video="https://www.facebook.com/watch/?v=1719351315383830">
-          
-      </div>
-      
     </div>
 
   </section>
-
 
   <!-- Logros y Avances Responsive 2 -->
   <section id="logros-2" class="succes-2">
@@ -340,13 +348,13 @@
     <div class="succes-content">
 
       <div class="slogan-row">
-        <span class="slogan">La Excelencia continua</span>
+        <span class="slogan">La Excelencia Continua</span>
         <img class="logo-exc" src="https://i.ibb.co/6c1VTMwq/image.png" alt="Logo Excelencia">
       </div>
 
       <h1 class="title">Logros y Avances</h1>
 
-      <p>Hemos recorrido un camino de grandes transformaciones, consolidando avances significativos que fortalecen la calidad, el bienestar y la proyección de nuestra Universidad.</p>
+      <p id="text-succes">Hemos recorrido un camino de grandes transformaciones, consolidando avances significativos que fortalecen la calidad, el bienestar y la proyección de nuestra Universidad.</p>
 
     </div>
 
@@ -360,70 +368,70 @@
     <div class="accordion-2">
 
       <div class="accordion-item">
-        <button class="accordion-header">Implementación del Plan de Desarrollo Institucional 2022-2031 <p>🔽</p></button>
+        <button class="accordion-header">Implementación del Plan de Desarrollo Institucional 2022-2031 <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se aprobó el nuevo PDI “Juntos Construimos Universidad”, con una nueva misión y visión, cinco líneas estratégicas y cuatro ejes programáticos, orientando el rumbo institucional hacia inclusión, investigación, innovación y modernización.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Retorno seguro a la presencialidad <p>🔽</p></button>
+        <button class="accordion-header">Retorno seguro a la presencialidad <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se garantizaron protocolos de bioseguridad y adecuaciones en aulas y laboratorios para un regreso progresivo y seguro de la comunidad universitaria.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Fortalecimiento de Bienestar Universitario <p>🔽</p></button>
+        <button class="accordion-header">Fortalecimiento de Bienestar Universitario <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se ofrecieron 1.027 atenciones psicológicas individuales, 8.633 apoyos económicos a estudiantes y convenios en movilidad y salud para mejorar la calidad de vida de la comunidad.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Dignificación laboral docente y administrativa <p>🔽</p></button>
+        <button class="accordion-header">Dignificación laboral docente y administrativa <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se realizaron mejoras salariales y de vinculación a 26 docentes, 23 pasaron a tiempo completo, 61 trabajadores fueron incluidos en planta y 7 funcionarios recuperaron derechos de carrera administrativa</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Fortalecimiento de la Unidad de Salud Universitaria <p>🔽</p></button>
+        <button class="accordion-header">Fortalecimiento de la Unidad de Salud Universitaria <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se implementó una estrategia de equilibrio presupuestal y financiero, alcanzando 62% de ejecución en ingresos y 57% de recaudo, garantizando la sostenibilidad del servicio.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Actualización de estatutos y normatividad institucional <p>🔽</p></button>
+        <button class="accordion-header">Actualización de estatutos y normatividad institucional <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se avanzó en la actualización del Estatuto Estudiantil y otros reglamentos, con participación de la comunidad académica, fortaleciendo la gobernabilidad y la cultura de la excelencia.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Restauración de la Facultad de Bellas Artes<p>🔽</p></button>
+        <button class="accordion-header">Restauración de la Facultad de Bellas Artes <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Las obras de restauración alcanzaron un 82,6% de avance en 2024, con bloques icónicos como el Aula Magna y el Museo patrimonial superando el 90%, consolidándose como uno de los proyectos más emblemáticos de la institución.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Expansión en investigación, publicaciones y patentes<p>🔽</p></button>
+        <button class="accordion-header">Expansión en investigación, publicaciones y patentes <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se aprobaron 13 libros institucionales en 2024 y se obtuvieron nuevas patentes de invención en colaboración con docentes, fortaleciendo la innovación y la producción académica.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Premio a la Excelencia Maestro<p>🔽</p></button>
+        <button class="accordion-header">Premio a la Excelencia Maestro <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>En 2023 se realizó la primera gala de reconocimiento a 65 docentes con más de 40 años de servicio, resaltando su aporte a la formación y consolidación de la excelencia académica.</p>
         </div>
       </div>
 
       <div class="accordion-item">
-        <button class="accordion-header">Modernización del multicampus<p>🔽</p></button>
+        <button class="accordion-header">Modernización del multicampus <i class="fa-solid fa-chevron-down"></i></button>
         <div class="accordion-content">
           <p>Se ejecutaron intervenciones masivas en todas las sedes (Norte, Centro, Sabanalarga, Suan, Soledad, entre otras), incluyendo seguridad, mobiliario, laboratorios y sistemas tecnológicos.</p>
         </div>
@@ -432,21 +440,27 @@
     </div>
       
     <!-- Responsive -->
-    <div class="video-grid-2">
+      <div class="video-grid-2">
 
-      <!-- Imagen que abre el primer video -->
-      <img src="https://i.ibb.co/Dg99DJMR/image.png" 
-      alt="Video 1"
-      class="video-thumb"
-      data-video="https://www.facebook.com/watch/?v=1268405894171410">
+        <!-- Imagen que abre el primer video -->
+        <div class="cont-img-thumb">
+          <img src="https://i.ibb.co/Dg99DJMR/image.png" 
+              alt="Video 1"
+              class="video-thumb"
+              data-video="https://www.facebook.com/watch/?v=1268405894171410">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
 
-      <!-- Imagen que abre el segundo video -->
-      <img src="https://i.ibb.co/1t1LRTbP/image.png" 
-      alt="Video 2"
-      class="video-thumb"
-      data-video="https://www.facebook.com/watch/?v=1719351315383830">
-        
-    </div>
+        <!-- Imagen que abre el segundo video -->
+        <div class="cont-img-thumb">
+          <img src="https://i.ibb.co/1t1LRTbP/image.png" 
+              alt="Video 2"
+              class="video-thumb"
+              data-video="https://www.facebook.com/watch/?v=1719351315383830">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+
+      </div>
 
     <!-- Modal (oculta por defecto) -->
     <div id="videoModalR" class="modal">
@@ -457,6 +471,12 @@
     </div>
 
   </section>
+
+
+
+
+
+
 
   <!-- Plan de Gobierno -->
   <section id="plan" class="plan-container">
@@ -472,9 +492,10 @@
 
       <h1 class="title">Plan de Gobierno</h1>
 
-      <p> El Plan de Gobierno <b>2025–2029</b> de la Universidad del Atlántico, liderado por el rector Danilo Hernández Rodríguez, constituye una hoja de ruta estratégica para consolidar los logros alcanzados en el periodo anterior y proyectar a la institución hacia estándares internacionales de excelencia. Inspirado en los principios de calidad, inclusión, sostenibilidad y transformación digital, este plan responde a las recomendaciones del Consejo Nacional de Acreditación y a las exigencias de un mundo académico y laboral en constante evolución.</p>
+      <p> El Plan de Gobierno <b>2025–2029</b> de la Universidad del Atlántico, liderado por el rector Danilo Hernández Rodríguez, constituye una hoja de ruta estratégica para consolidar los logros alcanzados en el periodo anterior y proyectar a la institución hacia estándares internacionales de excelencia. 
+        
+      <br> <br> Inspirado en los principios de calidad, inclusión, sostenibilidad y transformación digital, este plan responde a las recomendaciones del Consejo Nacional de Acreditación y a las exigencias de un mundo académico y laboral en constante evolución, a conitiacion se presentan los Ejes Estratégicos del Plan de Gobierno</p>
 
-      <h2>Ejes Estratégicos del Plan de Gobierno 2025–2029</h2>
 
       <div class="container-list">
 
@@ -482,11 +503,7 @@
 
           <div class="info-list"> 
 
-            <div> <h2>1</h2> </div>
-
-            <div> 
-              <h2>Excelencia Académica e Innovación en el Posgrado</h2> 
-            </div>
+            <div> <h2>1. Excelencia Académica e Innovación en el Posgrado</h2> <i class="fa-solid fa-chevron-down"></i></div>
 
           </div>    
 
@@ -498,11 +515,7 @@
 
           <div class="info-list"> 
 
-            <div> <h2>2</h2> </div>
-
-            <div> 
-              <h2>Empleabilidad, Emprendimiento y Vinculación Global</h2> 
-            </div>
+            <div> <h2>2. Empleabilidad, Emprendimiento y Vinculación Global</h2> <i class="fa-solid fa-chevron-down"></i></div>
 
           </div>    
 
@@ -514,11 +527,7 @@
 
           <div class="info-list"> 
 
-            <div> <h2>3</h2> </div>
-
-            <div> 
-              <h2>Cultura, Bienestar y Desarrollo Social</h2> 
-            </div>
+            <div> <h2>3. Cultura, Bienestar y Desarrollo Social</h2> <i class="fa-solid fa-chevron-down"></i></div>
 
           </div>    
 
@@ -530,11 +539,7 @@
 
           <div class="info-list"> 
 
-            <div> <h2>4</h2> </div>
-
-            <div> 
-              <h2>Liderazgo Académico, Acreditación Internacional y Escuela de Pensamiento</h2> 
-            </div>
+            <div> <h2>4. Liderazgo Académico, Acreditación Internacional y Escuela de Pensamiento</h2> <i class="fa-solid fa-chevron-down"></i></div>
 
           </div>    
 
@@ -546,11 +551,7 @@
 
           <div class="info-list"> 
 
-            <div> <h2>5</h2> </div>
-
-            <div> 
-              <h2>Investigación, Ciencia y Proyección Social</h2> 
-            </div>
+            <div> <h2>5. Investigación, Ciencia y Proyección Social</h2> <i class="fa-solid fa-chevron-down"></i></div>
 
           </div>    
 
@@ -562,12 +563,8 @@
 
           <div class="info-list"> 
 
-            <div> <h2>6</h2> </div>
-
-            <div> 
-              <h2>Transformación Institucional, Gobernanza y Sostenibilidad</h2> 
-            </div>
-
+            <div> <h2>6. Transformación Institucional, Gobernanza y Sostenibilidad</h2> <i class="fa-solid fa-chevron-down"></i></div>
+       
           </div>    
 
           <p>Promueve el desarrollo del talento humano mediante becas de formación avanzada, concursos de vinculación docente y programas de internacionalización. Además, fortalece el sentido de comunidad, impulsa la identidad institucional y establece estrategias de sostenibilidad ambiental y financiera, incluyendo energías renovables y un plan maestro de infraestructura.</p>
@@ -598,51 +595,45 @@
 
   </section>
 
-  
+
+
+
   <!-- Contactanos-->
-  <section id="contacto" class="plan-container">
+  <section id="contacto" class="contact-container">
 
-    <!-- Right: campaign image -->
-    <div class="image-plan">
-      <img src="https://i.ibb.co/Xrqs3GL3/image.png" alt="Danilo Hernandez">
-    </div>  
+  <!-- Right: campaign image -->
+  <div class="contact-image">
+    <a href="https://www.google.com/maps/place/Universidad+del+Atl%C3%A1ntico/@11.0186108,-74.8741805,17.3z/data=!4m10!1m2!2m1!1suniversidad+del+atlantico+maps!3m6!1s0x8ef42c76792046e5:0x815b52c179f466ee!8m2!3d11.0191881!4d-74.8731999!15sCh51bml2ZXJzaWRhZCBkZWwgYXRsYW50aWNvIG1hcHOSARFwdWJsaWNfdW5pdmVyc2l0eaoBXwoKL20vMDV0MGtsNxABKg8iC3VuaXZlcnNpZGFkKA4yHxABIhu-lBs8EyvVwwBTu7xQt79DSo7ioJnYQbDoGIIyHRACIhl1bml2ZXJzaWRhZCBkZWwgYXRsYW50aWNv4AEA!16s%2Fm%2F05t0kl7?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D" alt="Mapa Universidad del Atlantico" target="_blank">
+    <img src="https://i.ibb.co/Xrqs3GL3/image.png" alt="Danilo Hernandez"> </a>
+  </div>
 
-    <div class="plan-content"> 
+  <div class="contact-content"> 
 
-      <!-- Left: text block -->
-      <div class="slogan-row">
-        <span class="slogan">La Excelencia Continua</span>
-        <img class="logo-exc" src="https://i.ibb.co/6c1VTMwq/image.png" alt="Logo Excelencia">
-      </div>
-
-
-      <h1 class="title">Contactanos</h1>
-
-      <p> Tu voz es fundamental para seguir construyendo la universidad que soñamos. <br>
-
-      Queremos escucharte, conocer tus ideas, tus inquietudes y trabajar de la mano contigo.
-      Este espacio está abierto para que estudiantes, profesores y toda la comunidad universitaria puedan acercarse y sumar su energía a este proyecto de futuro.</p>
-
+    <!-- Left: text block --> 
+    <div class="slogan-row">
+      <span class="slogan">La Excelencia Continua</span>
+      <img class="logo-exc" src="https://i.ibb.co/6c1VTMwq/image.png" alt="Logo Excelencia">
     </div>
 
+    <h1 class="title">Contactanos</h1>
 
+    <p>Queremos escucharte, conocer tus ideas, tus inquietudes y trabajar de la mano contigo, contactanos por Wathsapp o Email</p>
 
+    
+    <div class="show-email"><i class="fa-regular fa-envelope"></i> <p>unidos@danilohernandez9ua</p> </div>
+    <div class="show-ubication">  <i class="fa-regular fa-map"></i> <p>Kilometro 7 Via puerto colombia</p>  </div>
 
-
-
+  </div>
+  
   </section>
 
-<div class="whatsapp-float">
-  <a href="https://wa.me/573016552486?text=Hola%20%2C%20me%20interesa%20unirme%20y%20apoyar%20la%20campaña%20del%20Rector%20Danilo%20Hernández%202025-2029.%20¿Cómo%20puedo%20participar%3F" 
-     class="whatsapp-float" 
-     target="_blank">
-    <img src="https://i.ibb.co/jk8GkyT3/wspimage.png" alt="boton de Wathsapp"> 
-  </a>
-</div>
-
-
-
-
+  <div class="whatsapp-float">
+    <a href="https://wa.me/573234336250?text=Hola%20%2C%20me%20interesa%20unirme%20y%20apoyar%20la%20campaña%20del%20Rector%20Danilo%20Hernández%202025-2029.%20¿Cómo%20puedo%20participar%3F" 
+      class="whatsapp-float" 
+      target="_blank">
+      <img src="https://i.ibb.co/jk8GkyT3/wspimage.png" alt="boton de Wathsapp">  
+    </a>
+  </div>
 
 
   <script src="./script.js"></script>
@@ -650,6 +641,7 @@
   <script async defer crossorigin="anonymous" 
    src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0">
   </script>
+
 
 </body>
 
