@@ -588,7 +588,6 @@ header {
 .succes-content>p{
   max-width: 90rem;
   font-size: var(--step--1);
-  
 }
 
 .accordion {
@@ -664,8 +663,9 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   height: max-content;
   column-gap: 3rem;
-  row-gap: 2rem;
+  row-gap: 3rem;
   justify-content: space-between;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -673,17 +673,15 @@ header {
   width: 100%;
   height: auto;
   display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
   row-gap: 2rem;
   flex-direction: column;
   align-items: left;
   justify-content: center;
   padding-top: 3rem;
   font-family: "Lexend";
-}
 
-.plan-content >h2{
-  font-family: "Space Mono", monospace;    
-  font-size: var(--step--1);
 }
 
 .plan-content> p{
@@ -703,7 +701,6 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
-
 }
 
 .block-list {
@@ -735,6 +732,7 @@ header {
 }
 
 .info-list div h2{
+  font-family: "Lexend";
   font-size: var(--step--2);
   font-weight: 600;
 }
@@ -1375,10 +1373,20 @@ div[class^="show"]>p{
 
 
   /* Texto*/
+
+
+
+  .slogan{
+    font-size: var(--step-0);
+    font-weight: 800;
+  }
+
+
+
   .title{
     max-width: 60rem;
     font-family: "Lexend";
-    font-size: var(--step-4);
+    font-size: var(--step-3);
     font-weight: 800;
   }
 
@@ -1387,16 +1395,92 @@ div[class^="show"]>p{
   }
 
   .hero-text{
-    max-width: 70rem;
-    font-family: "Lexend";  
-    font-size: var(--step-2);
-    text-align: justify;
-    font-weight: 400;
-    color: #13161b;
+    font-size: var(--step-1);
+    text-align: left;
+  }
+
+  .join-btn{
+    font-size: var(--step-0);
+  }
+
+  .card h3 {
+    font-size: var(--step-0);
+  }
+
+ .card p {
+    font-size: var(--step--1);
+  }
+
+  .profile-content >h2{
+    font-family: "Poppins", sans-serif;
+    font-size: var(--step-0);
   }
 
 
- 
+  
+  .profile-content> p{
+    font-size: var(--step-0);
+    text-align: left;
+  }
+
+
+  #text-succes{
+    font-family: "Lexend";  
+    font-size: var(--step-0);
+    text-align: left;
+  }
+
+
+  .accordion-header {
+    text-align: left;
+    font-size: var(--step-0);
+  }
+
+  .accordion-content p {
+    font-size: var(--step-0);
+      font-weight: 300;
+  }
+
+  .plan-content> p{
+    font-size: var(--step-0);
+    text-align: left;
+  }
+
+  .info-list div h2{
+    font-size: var(--step-0);
+    font-weight: 600;
+  }
+
+
+  .block-list p {
+    font-family: "Lexend";  
+    font-size: var(--step-0);
+    font-weight: 300;
+  }
+
+
+  .download-btn a {
+  text-decoration: none;
+  font-size: var(--step-0);
+  font-weight: 400;
+
+}
+
+.contact-content p{
+  font-size: var(--step-0);
+}
+
+
+div[class^="show"]>p{
+  font-size: var(--step-0);
+}
+
+
+
+
+
+
+
 
 
 
