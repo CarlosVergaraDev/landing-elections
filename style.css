@@ -1375,6 +1375,12 @@ div[class^="show"]>p{
 
 
   /* Texto*/
+  .title{
+    max-width: 60rem;
+    font-family: "Lexend";
+    font-size: var(--step-4);
+    font-weight: 800;
+  }
 
   .hero-num{
     font-size: var(--step-1);
@@ -1383,7 +1389,7 @@ div[class^="show"]>p{
   .hero-text{
     max-width: 70rem;
     font-family: "Lexend";  
-    font-size: var(--step-0);
+    font-size: var(--step-2);
     text-align: justify;
     font-weight: 400;
     color: #13161b;
