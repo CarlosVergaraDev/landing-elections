@@ -1313,6 +1313,8 @@ div[class^="show"]>p{
     padding-right: 2rem;
     display: flex;
   }
+
+  
 }
 
 @media (max-width: 450px) {
@@ -1372,7 +1374,23 @@ div[class^="show"]>p{
 
 
 
-  
+  /* Texto*/
+
+  .hero-num{
+    font-size: var(--step-1);
+  }
+
+  .hero-text{
+    max-width: 70rem;
+    font-family: "Lexend";  
+    font-size: var(--step-0);
+    text-align: justify;
+    font-weight: 400;
+    color: #13161b;
+  }
+
+
+ 
 
 
 
