@@ -68,7 +68,7 @@ renderCarrusel(cardsData);
 const slides = [
   { url: "https://i.ibb.co/gb0T9rhP/lv07.png", year: "2025", title: "Restauración de sede Bellas Artes" },
   { url: "https://i.ibb.co/PZwdmxTJ/image.png", year: "2024", title: "Ampliación de oferta academica en sede Suan" },
-  { url: "https://i.ibb.co/TD1TtBWf/image.png", year: "2023", title: "Gratuidad universal para Matriculas de estratos 1,2 y 3" },
+  { url: "https://i.ibb.co/TD1TtBWf/image.png", year: "2023", title: "Gratuidad universal para matrículas de estratos 1, 2 y 3" },
   { url: "https://i.ibb.co/chgmXRdT/lv10.png", year: "2022", title: "Se aumento a 23 el numero de programas acreditados en alta calida" },
   { url: "https://i.ibb.co/j9GN1yDf/image.png", year: "2021", title: "Apertura oficial de la sede Sabanalarga" }
 ];
